@@ -1,0 +1,11 @@
+--- libopenaptx-0.2.0/Makefile.orig	2020-04-11 15:04:15.000000000 +0200
++++ libopenaptx-0.2.0/Makefile	2021-04-03 18:05:32.976537843 +0200
+@@ -54,7 +54,7 @@
+ 	$(MKDIR) $(DESTDIR)$(PREFIX)/$(PKGDIR)
+ 	$(PRINTF) 'prefix=%s\nexec_prefix=$${prefix}\nlibdir=$${exec_prefix}/%s\nincludedir=$${prefix}/%s\n\n' $(PREFIX) $(LIBDIR) $(INCDIR) > $(DESTDIR)$(PREFIX)/$(PKGDIR)/$(PCNAME)
+ 	$(PRINTF) 'Name: lib%s\nDescription: Open Source aptX codec library\nVersion: %u.%u.%u\n' $(NAME) $(MAJOR) $(MINOR) $(PATCH) >> $(DESTDIR)$(PREFIX)/$(PKGDIR)/$(PCNAME)
+-	$(PRINTF) 'Libs: -Wl,-rpath=$${libdir} -L$${libdir} -l%s\nCflags: -I$${includedir}\n' $(NAME) >> $(DESTDIR)$(PREFIX)/$(PKGDIR)/$(PCNAME)
++	$(PRINTF) 'Libs: -L$${libdir} -l%s\nCflags: -I$${includedir}\n' $(NAME) >> $(DESTDIR)$(PREFIX)/$(PKGDIR)/$(PCNAME)
+ 
+ uninstall:
+ 	for f in $(SOFILENAME) $(SONAME) $(LIBNAME) $(ANAME); do $(RM) $(DESTDIR)$(PREFIX)/$(LIBDIR)/$$f; done
