@@ -1,13 +1,13 @@
 Summary:	Open Source implementation of Audio Processing Technology codec (aptX)
 Summary(pl.UTF-8):	Otwarta implementacja kodeka Audio Processing Technology (aptX)
 Name:		libopenaptx
-Version:	0.2.0
+Version:	0.2.1
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
 #Source0Download: https://github.com/pali/libopenaptx/releases
 Source0:	https://github.com/pali/libopenaptx/releases/download/%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	07c36ca8597195081a8c11ed258fdbbc
+# Source0-md5:	83e12a34b86ee514fc5bb6f3ab060611
 Patch0:		%{name}-norpath.patch
 URL:		https://github.com/pali/libopenaptx
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
