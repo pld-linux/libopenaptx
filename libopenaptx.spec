@@ -2,8 +2,8 @@ Summary:	Open Source implementation of Audio Processing Technology codec (aptX)
 Summary(pl.UTF-8):	Otwarta implementacja kodeka Audio Processing Technology (aptX)
 Name:		libopenaptx
 Version:	0.2.1
-Release:	1
-License:	LGPL v2.1+
+Release:	2
+License:	GPL v3+
 Group:		Libraries
 #Source0Download: https://github.com/pali/libopenaptx/releases
 Source0:	https://github.com/pali/libopenaptx/releases/download/%{version}/%{name}-%{version}.tar.gz
@@ -14,14 +14,14 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This is Open Source implementation of Audio Processing Technology
-codec (aptX) derived from ffmpeg 4.0 project and licensed under LGPL
-v2.1+. This codec is mainly used in Bluetooth A2DP profile.
+codec (aptX) derived from ffmpeg 4.0 project and licensed under GPL
+v3+. This codec is mainly used in Bluetooth A2DP profile.
 
 %description -l pl.UTF-8
 Ten pakiet zawiera mającą otwarte źródła implementację kodeka Audio
 Processing Technology (aptX), wywodzącą się z projektu ffmpeg 4.0 i
-udostępnioną na licencji LGPL w wersji 2.1+. Kodek jest używany
-głównie w profilu Bluetooth A2DP.
+udostępnioną na licencji GPL w wersji 3+. Kodek jest używany głównie w
+profilu Bluetooth A2DP.
 
 %package devel
 Summary:	Header files for openaptx library
